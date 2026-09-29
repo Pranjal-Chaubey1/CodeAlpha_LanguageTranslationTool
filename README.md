@@ -6,18 +6,43 @@ It is a lightweight web application that allows users to enter text, select sour
 
 ## Features
 - **Multi-Language Support**: Translates between multiple major global languages.
-- **AI Translation API**: Utilizes Google Translate via `deep-translator` for fast and accurate results.
+- **AI Translation API**: Utilizes the `translate` library for fast and accurate results.
+- **Document Translation**: Allows uploading a text file (`.txt`) and translating its entire content.
 - **Text-to-Speech (TTS)**: Converts the translated text into playable audio using `gTTS`.
 - **Aesthetic UI**: Built using Streamlit for a clean, responsive, and easy-to-use interface.
 
 ## Tech Stack
 - Python 3
 - Streamlit (Frontend)
-- deep-translator (AI Translation)
+- translate (AI Translation)
 - gTTS (Audio Output)
 
 ## How to Run Locally
-1. Clone the repository to your local machine.
-2. Create and activate a Python virtual environment (`python3 -m venv venv` and `source venv/bin/activate`).
-3. Install the dependencies: `pip install -r requirements.txt`.
-4. Run the app: `streamlit run app.py`.
+Follow these exact steps to start the application:
+
+1. **Open a terminal** and navigate to the project directory:
+   ```bash
+   cd CodeAlpha_LanguageTranslationTool
+   ```
+2. **Create a virtual environment** (optional but recommended):
+   ```bash
+   python3 -m venv venv
+   ```
+3. **Activate the virtual environment**:
+   - On Linux/macOS:
+     ```bash
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     venv\\Scripts\\activate
+     ```
+4. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Run the Streamlit application**:
+   ```bash
+   streamlit run app.py
+   ```
+6. **Open your browser** and navigate to the provided local URL (usually `http://localhost:8501`).
